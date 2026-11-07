@@ -13,6 +13,18 @@ print("Pares:", pares)
 
 
 # ===== Ejercicio 2 =====
+edades = [25, 31, 19]
 nombres = ["Ana", "Luis", "Sofía"]
 for i, nombre in enumerate(nombres, start=1):
     print(f"{i}. {nombre}")
+print(list(zip(nombres, edades)))  # Muestra la relación entre nombres y edades
+
+
+
+# ===== Ejercicio 3 =====
+edades = [25, 31, 19] 
+edad_por_nombre = dict(zip(nombres, edades)) 
+print(edad_por_nombre)
+print("Edad de Luis:", edad_por_nombre["Luis"])  # Accede a la edad de Luis
+
+
