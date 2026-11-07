@@ -28,3 +28,15 @@ print(edad_por_nombre)
 print("Edad de Luis:", edad_por_nombre["Luis"])  # Accede a la edad de Luis
 
 
+
+# ===== Ejercicio 4 =====
+frase = "el perro y el gato y el loro"
+conteo = {}
+
+for palabra in frase.split():
+    if palabra in conteo:
+        conteo[palabra] += 1
+    else:
+        conteo[palabra] = 1
+
+print(conteo)
